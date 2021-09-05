@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sqlview</string>
+    <string name="enter_id">Enter id to update or delete</string>
+    <string name="enter_name">Enter name to insert or update</string>
+    <string name="enter_marks">Enter Marks</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+</resources>

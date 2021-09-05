@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_id"
+            android:id="@+id/id"
+            android:onClick="buttonAction"
+            android:autofillHints=""
+            android:inputType="phone"
+            tools:ignore="UsingOnClickInXml" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:id="@+id/name"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_marks"
+            android:id="@+id/marks"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="60dp"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marks"
+            android:id="@+id/layout1"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insert"
+                android:text="@string/insert"
+                android:onClick="buttonAction"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/ebony"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:text="@string/view"
+                android:onClick="buttonAction"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/ebony"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:onClick="buttonAction"
+                android:id="@+id/update"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/ebony"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:onClick="buttonAction"
+                android:id="@+id/delete"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/ebony"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
